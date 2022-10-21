@@ -13,7 +13,13 @@
  *= require_tree .
  *= require_self
  */
-@import "skippr"; 
+@import "skippr";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 #container{
   height: 500px;
@@ -33,4 +39,93 @@
 }
 .image5 {
   background-image: url('../images/test5.jpg');
+}
+
+header {
+  height: 70px;
+  background-color: #EC715F;
+  display: flex;
+  justify-content: center;
+}
+
+.contain {
+  width: 1024px;
+  height: 70px;
+  display: flex;
+}
+
+ul{
+  list-style: none;
+  height: 70px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+li {
+  font-size: 16px;
+  margin: 30px;
+}
+
+a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+
+.main-image {
+  height: 650px;
+  background-image: url("../images/mv.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.intext{
+  text-align: center; /* 文字を中央揃えにする */
+  padding-top: 200px; /* 上側の内側余白で垂直方向の位置を調整 */
+}
+
+.main-image-text{
+  font-size: 64px;
+  color: #FAFAFA;
+}
+
+.main-image-sub{
+  font-size: 20px;
+  color: #FAFAFA;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.contai{
+  width: 960px;
+  text-align: center;
+}
+
+.hh{
+  font-size: 32px;
+  margin-top: 90px;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+hr{
+  height: 3px;
+  width: 70px;
+  color: #EC715F;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.bb{
+  margin-bottom: 30px;
+}
+
+footer{
+  height: 60px;
+  background-color: red;
 }

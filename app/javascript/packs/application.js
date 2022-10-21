@@ -15,6 +15,8 @@ import "../stylesheets/style.css"
 import "jquery.min"
 import "skippr.min"
 import "./practice.js"
+const images = require.context('../images', true)
+const imagePath = (name) => images(name, true)
 
 Rails.start()
 Turbolinks.start()
